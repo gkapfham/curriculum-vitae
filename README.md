@@ -9,6 +9,18 @@ pages of the document in an automated fashion. Parts of this CV are inspired by 
 As this document is my own customized professional statement, I ask that, if you use it as inspiration or for reference,
 you suitably customize it for your own purposes.
 
+```shell
+git clone https://github.com/gkapfham/curriculum-vitae.git
+cd curriculum-vitae
+cd bibliography
+git submodule init
+git submodule update
+cd ../
+pdflatex curriculum-vitae-kapfhammer.tex
+biber curriculum-vitae-kapfhammer.bcf
+pdflatex curriculum_vitae_kapfhammer.tex
+pdflatex curriculum_vitae_kapfhammer.tex
+```
 
 
 
