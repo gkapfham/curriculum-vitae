@@ -5,8 +5,6 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{merriweather}
-% \usepackage{librecaslon}
-% \usepackage{libertine}
 
 \usepackage{lastpage}
 \usepackage{xcolor}
@@ -14,6 +12,7 @@
 \usepackage[geometry]{ifsym}
 \usepackage[american]{babel}
 \usepackage{csquotes}
+\usepackage{microtype}
 
 % adjust the page margins
 \usepackage[scale=0.9]{geometry}
@@ -129,8 +128,6 @@
 \renewcommand*\subsectionfont{\Large\rmfamily}
 
 \begin{document}
-
-% \input{coverletter.tex}                             % Include cover letter from coverletter.tex
 
 \makecvtitle
 
@@ -272,6 +269,9 @@ multimedia computing and procedural programming.}
   release of both computational artifacts and data sets suitable for use by undergraduate and graduate students,
   software engineering practitioners, and other computer scientists in both academia and industry.}
 
+% \vspace*{-.2in}
+% \section{Research Interests}
+
 % Removing forced punctuation from cvitem
 \input{cvitem_modifications/cvitem_modified}
 
@@ -298,7 +298,7 @@ multimedia computing and procedural programming.}
 \DeclareFieldFormat[inproceedings]{title}{\mkbibquote{#1\addcomma}}
 \DeclareFieldFormat[incollection]{title}{\mkbibquote{#1\addcomma}}
 
-\vspace*{-.055in}
+\vspace*{-.1in}
 \printbibliography[filter=papers,title={Publications}]
 
 % RESEARCH PRESENTATIONS:
