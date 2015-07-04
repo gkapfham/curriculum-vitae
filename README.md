@@ -7,13 +7,13 @@ pages of the document in an automated fashion. Parts of this CV are inspired by 
 [moutonf/CV](https://github.com/moutonf/CV), which uses revised versions of the
 [moderncv](https://www.ctan.org/pkg/moderncv) and [moderntimeline](https://github.com/raphink/moderntimeline) packages.
 As this document is my own customized professional portfolio, I ask that, if you use it as inspiration or for reference,
-you suitably customize it for your own purposes. Whenever possible, I would appreciate it if you mention that you used
-my CV as a template when creating your document.
+you suitably customize it for your own purposes. If you find this example useful, I would appreciate it if, in
+addition to starring the repository, you mention that you used my CV as a template when creating your document.
 
-### Programming Environment
+### Development Environment
 
 The curriculum vitae is compiled on an Ubuntu 14.04 LTS workstation using `pdflatex` and
-`biber`. You may also compile the paper to a PDF file using a wide variety of other tools, such as `latexmk`. You may
+`biber`. You may also compile the CV to a PDF file using a wide variety of other tools, such as `latexmk`. You may
 view the resulting PDF file for my CV by visiting my [web site](http://www.cs.allegheny.edu/sites/gkapfham) and
 downloading it from the main page. If you are unable to compile create the CV with your development tools and your
 execution environment, then please open a new issue and I will attempt to resolve your concerns.
