@@ -15,7 +15,7 @@ addition to starring the repository, you mention that you used my CV as a templa
 The curriculum vitae is compiled on an Ubuntu 14.04 LTS workstation using `pdflatex` and
 `biber`. You may also compile the CV to a PDF file using a wide variety of other tools, such as `latexmk`. You may
 view the resulting PDF file for my CV by visiting my [web site](http://www.cs.allegheny.edu/sites/gkapfham) and
-downloading it from the main page. If you are unable to compile create the CV with your development tools and your
+downloading it from the main page. If you are unable to compile the CV with your development tools and your
 execution environment, then please open a new issue and I will attempt to resolve your concerns.
 
 ### Creating the Curriculum Vitae
