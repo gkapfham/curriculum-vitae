@@ -15,11 +15,12 @@
 \usepackage{microtype}
 
 % adjust the page margins
+% \usepackage[scale=0.9, bottom=.2in]{geometry}
 \usepackage[scale=0.9]{geometry}
 
-\lfoot{\addressfont\itshape\textcolor{color1}{Gregory M.\ Kapfhammer}}
-\cfoot{\addressfont\itshape\textcolor{color1}{December 10, 2015}}
-\rfoot{\addressfont\itshape\textcolor{color1}{Page \thepage\ of \pageref{LastPage}}}
+% \lfoot{\addressfont\itshape\textcolor{color1}{Gregory M.\ Kapfhammer}}
+% \cfoot{\addressfont\itshape\textcolor{color1}{December 10, 2015}}
+% \rfoot{\addressfont\itshape\textcolor{color1}{Page \thepage\ of \pageref{LastPage}}}
 
 \usepackage{etoolbox}
 \patchcmd{\recomputecvlengths}{%
@@ -31,7 +32,7 @@
 \usepackage{pdfpages/pdfpages}
 \usepackage{moderntimeline/moderntimeline}
 
-\tlmaxdates{1994}{2017}
+\tlmaxdates{1994}{2018}
 \tltextstart[north]{\scriptsize}
 \tltextend[south]{\scriptsize}
 \makeatletter
@@ -116,7 +117,7 @@
 \email{gkapfham@allegheny.edu}
 % \homepage{http://www.cs.allegheny.edu/sites/gkapfham/}
 
-\renewcommand*\sectionfont{\huge\rmfamily}
+\renewcommand*\sectionfont{\Huge\rmfamily}
 \renewcommand*\subsectionfont{\LARGE\rmfamily}
 
 \begin{document}
@@ -320,7 +321,8 @@ students.}
 \defbibfilter{theses}{
   type=report or
   type=thesis or
-  keyword=undergraduate
+  keyword=undergraduate and
+  not keyword=kapfhammer
 }
 \DeclareFieldFormat[report]{addendum}{\addcomma\addspace#1\nopunct}
 \DeclareFieldFormat[report]{title}{\mkbibquote{#1\addcomma}}
