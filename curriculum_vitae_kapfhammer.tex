@@ -4,28 +4,31 @@
 \moderncvcolor{darkgrey}
 
 \usepackage[utf8]{inputenc}
-\usepackage{merriweather}
+\usepackage[rm]{roboto}
 
-\usepackage{lastpage}
-\usepackage{xcolor}
-\usepackage{pifont}
-\usepackage[geometry]{ifsym}
 \usepackage[american]{babel}
+\usepackage[geometry]{ifsym}
 \usepackage{csquotes}
+\usepackage{lastpage}
 \usepackage{microtype}
+\usepackage{pifont}
+\usepackage{xcolor}
+\usepackage{lastpage}
 
-% adjust the page margins
-% \usepackage[scale=0.9, bottom=.2in]{geometry}
-\usepackage[scale=0.9]{geometry}
+\usepackage[scale=0.9, top=.5in, bottom=.5in, footskip=.1in]{geometry}
 
-% \lfoot{\addressfont\itshape\textcolor{color1}{Gregory M.\ Kapfhammer}}
-% \cfoot{\addressfont\itshape\textcolor{color1}{December 10, 2015}}
-% \rfoot{\addressfont\itshape\textcolor{color1}{Page \thepage\ of \pageref{LastPage}}}
+\newcommand{\subsubsection}{}
+\newcommand{\paragraph}{}
+\newcommand{\subparagraph}{}
+
+\fancyhf{}
+\lfoot{December 1, 2017}
+\rfoot{\thepage\ of~\pageref{LastPage}}
 
 \usepackage{etoolbox}
 \patchcmd{\recomputecvlengths}{%
   \setlength{\quotewidth}{0.65\textwidth}%
-}{%
+}{
   \setlength{\quotewidth}{0.9\textwidth}%
 }{}{}
 
@@ -70,13 +73,14 @@
 
 \addbibresource{bibliography/bibtex/bibliography_kapfhammer.bib}
 
-% Modifying the default standard.tex style of Biblatex. This modification is performed to include the moderntimeline package.
+% Modifying the default standard.tex style of Biblatex
+% Performed to include the moderntimeline package
 \input{biblatex_modifications/standard_modification.tex}
 
 \newcommand{\cvreferencecolumn}[2]{%
-  \cvitem[0.75em]{}{%
+  \cvitem[0.75em]{}{
     \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#1\end{minipage}%
-    \hfill%
+    \hfill
     \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#2\end{minipage}%
     }
 }
@@ -111,11 +115,10 @@
 \newcommand{\goacm}{$^{\mbox{\ding{169}}}$}
 
 \name{\textrm{Gregory}}{\\\mbox{\textrm{M.\ Kapfhammer}}}
-\title{\textrm{\LARGE{Associate Professor of Computer Science}}\vspace*{-.3in}}
+\title{\textrm{\huge{Associate Professor of Computer Science}}\vspace*{-.3in}}
 \address{Department of Computer Science\\Allegheny College\\}{}{}
 \phone[mobile]{+1 814-332-2880}
 \email{gkapfham@allegheny.edu}
-% \homepage{http://www.cs.allegheny.edu/sites/gkapfham/}
 
 \renewcommand*\sectionfont{\Huge\rmfamily}
 \renewcommand*\subsectionfont{\LARGE\rmfamily}
@@ -144,7 +147,7 @@ Software Component Test Drivers}}
 \section{Current Appointment}
 
 \tlcventry{2000}{0}{Associate Professor and Chair}{\em{Department of Computer Science, Allegheny College}}{}{Chair
-(2013-Present), Associate Professor (2009-Present), Assistant Professor (2007-2009), and Instructor (2000-2007)}
+(2013-Present), Associate Professor (2009-Present), Assistant Professor (2007-2009), Instructor (2000-2007)}
 {\begin{itemize}
     \renewcommand\labelitemi{\Large\textbullet}
     \item Articulated a vision and furnished daily leadership that resulted in increases in majors, minors, and
@@ -535,11 +538,11 @@ scholarship recognizing the late Robert D.\ Cupper.}
 % \vspace*{-.175in}
 % \section{Outreach Activities}
 
-% \tldatecventry{2011}{Cochranton Elementary School}{}{}{}{Developed, employed, and evaluated computer-based instructional methods for
-%   teaching geometry.}
+% \tldatecventry{2011}{Cochranton Elementary School}{}{}{}{Developed, employed, and evaluated computer-based
+% instructional methods for teaching geometry.}
 
-% \tldatecventry{2009}{Merrimack College}{}{}{}{Delivered lectures and hosted events introducing the theory and practice of
-%   software engineering.}
+% \tldatecventry{2009}{Merrimack College}{}{}{}{Delivered lectures and hosted events introducing the theory and practice
+% of software engineering.}
 
 % \tldatecventry{2004}{Allegheny College}{}{}{}{Introduced the fundamentals of computer science to attendees of an
 %   off-campus faculty conference.}
