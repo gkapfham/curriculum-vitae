@@ -319,39 +319,41 @@ students.}
 \printbibliography[filter=volumesedited,title={Volumes Edited}]
 
 % SUPERVISED THESES
-\defbibfilter{theses}{
-  type=report or
-  type=thesis or
-  keyword=undergraduate and
-  not keyword=kapfhammer
-}
-\DeclareFieldFormat[report]{addendum}{\addcomma\addspace#1\nopunct}
-\DeclareFieldFormat[report]{title}{\mkbibquote{#1\addcomma}}
-\DeclareFieldFormat[thesis]{title}{\mkbibquote{#1\addcomma}}
-\DeclareFieldFormat[thesis]{type}{#1\addcomma}
-\DeclareFieldFormat[report]{number}{#1\addcomma}
 
-\vspace*{-.4in}
-\printbibliography[filter=theses,title={Supervised Theses}]
+% \defbibfilter{theses}{
+%   type=report or
+%   type=thesis or
+%   keyword=undergraduate and
+%   not keyword=kapfhammer
+% }
+% \DeclareFieldFormat[report]{addendum}{\addcomma\addspace#1\nopunct}
+% \DeclareFieldFormat[report]{title}{\mkbibquote{#1\addcomma}}
+% \DeclareFieldFormat[thesis]{title}{\mkbibquote{#1\addcomma}}
+% \DeclareFieldFormat[thesis]{type}{#1\addcomma}
+% \DeclareFieldFormat[report]{number}{#1\addcomma}
+
+% \vspace*{-.4in}
+% \printbibliography[filter=theses,title={Supervised Theses}]
 
 % SUPERVISED RESEARCH PRESENTATIONS:
-\defbibfilter{supervise}{
-  type=misc and
-  keyword=supervised
-}
-\DeclareFieldFormat[misc]{title}{\mkbibquote{#1\addcomma}}
 
-\vspace*{-.2in}
-{\small
-\setlength\tabcolsep{6pt}
-\begin{tabular}{c c c}
-  \gosecond Substantial contributions as a second reader &
-  \gofaculty Best senior prize &
-  \goacm Best thesis prize
-\end{tabular} }
+% \defbibfilter{supervise}{
+%   type=misc and
+%   keyword=supervised
+% }
+% \DeclareFieldFormat[misc]{title}{\mkbibquote{#1\addcomma}}
 
-\vspace*{-.05in}
-\printbibliography[filter=supervise,title={Supervised Presentations}]
+% \vspace*{-.2in}
+% {\small
+% \setlength\tabcolsep{6pt}
+% \begin{tabular}{c c c}
+%   \gosecond Substantial contributions as a second reader &
+%   \gofaculty Best senior prize &
+%   \goacm Best thesis prize
+% \end{tabular} }
+
+% \vspace*{-.05in}
+% \printbibliography[filter=supervise,title={Supervised Presentations}]
 
 \vspace*{-.4in}
 \section{Professional Service}
