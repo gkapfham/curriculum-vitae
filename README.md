@@ -14,7 +14,7 @@ purposes. If you find this example useful, I would appreciate it if, in addition
 to starring the repository, you mention that you used my CV as a template when
 creating your document.
 
-### Development Environment
+## Development Environment
 
 The curriculum vitae is compiled on an Ubuntu 16.04 LTS workstation using
 `pdflatex` and `biber`. You may also compile the CV to a PDF file using a wide
@@ -22,7 +22,7 @@ variety of other tools, such as `latexmk`. If you are unable to compile the CV
 with your development tools and your execution environment, then please open a
 new issue and I will attempt to resolve your concerns.
 
-### Creating the Curriculum Vitae
+## Creating the Curriculum Vitae
 
 ```shell
 git clone https://github.com/gkapfham/curriculum-vitae.git
