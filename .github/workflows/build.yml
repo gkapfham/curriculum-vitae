@@ -22,19 +22,48 @@ jobs:
 
     # Define the steps run in the workflow
     steps:
+      #
       # Checkout out the code in the repository
       # Checkout the submodule for the bibliography
+      #
       - name: Check out code
         uses: actions/checkout@v2
         with:
           submodules: 'true'
+      #
       # Run the mdl linting tool, which references
       # the .mdlrc file stored in the repo's root
       # for further configuration details
+      #
       - name: Run mdl
         uses: actionshub/markdownlint@master
-      # Build the LaTeX document
+      #
+      # Build the LaTeX document of the CV
+      #
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
           root_file: curriculum_vitae_kapfhammer.tex
+      #
+      # Create a release of the PDF of the CV
+      #
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+            tag_name: ${{ github.ref }}
+            release_name: Release ${{ github.ref }}
+            draft: false
+            prerelease: false
+      - name: Upload Release Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+            upload_url: ${{ steps.create_release.outputs.upload_url }}
+            asset_path: ./curriculum_vitae_kapfhammer.pdf
+            asset_name: curriculum_vitae_kapfhammer.pdf
+            asset_content_type: application/pdf
