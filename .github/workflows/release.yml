@@ -1,16 +1,10 @@
-# Basic workflow that:
-# --> lints the markdown in the README file
-# --> checks to ensure that files and directories exist
-name: build
-
-# Controls when the action will run.
-# Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+
+name: Create Release
 
 # A workflow run is made up of one or more jobs
 # that can run sequentially or in parallel
@@ -38,3 +32,22 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: curriculum_vitae_kapfhammer.tex
+      # Create a release of the PDF of the CV
+      - name: Create Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+            tag_name: ${{ github.ref }}
+            release_name: Release ${{ github.ref }}
+            draft: false
+            prerelease: false
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+            upload_url: ${{ steps.create_release.outputs.upload_url }}
+            asset_path: ./curriculum_vitae_kapfhammer.pdf
+            asset_name: curriculum_vitae_kapfhammer.pdf
+            asset_content_type: application/pdf
