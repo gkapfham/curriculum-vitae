@@ -26,8 +26,15 @@ new issue and I will attempt to resolve your concerns.
 
 ## Creating the Curriculum Vitae
 
+For, clone the repository to your local computer:
+
 ```shell
 git clone https://github.com/gkapfham/curriculum-vitae.git
+```
+
+Now, change into the directory that contains the repository's files:
+
+```shell
 cd curriculum-vitae
 cd bibliography
 git submodule init
@@ -38,3 +45,30 @@ biber curriculum-vitae-kapfhammer.bcf
 pdflatex curriculum_vitae_kapfhammer.tex
 pdflatex curriculum_vitae_kapfhammer.tex
 ```
+
+Before you compile the CV, make sure that you have the bibliography in a Git
+submodule:
+
+```shell
+cd bibliography
+git submodule init
+git submodule update
+cd ../
+```
+
+At this point, you can compile the CV using the following commands:
+
+```shell
+pdflatex curriculum-vitae-kapfhammer.tex
+biber curriculum-vitae-kapfhammer.bcf
+pdflatex curriculum_vitae_kapfhammer.tex
+pdflatex curriculum_vitae_kapfhammer.tex
+```
+
+Alternatively, you can compile the CV using a single command:
+
+```shell
+latexmk -pdf -pvc curriculum_vitae_kapfhammer.tex
+```
+
+## Releasing a New Version of the Curriculum Vitae
