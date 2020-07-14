@@ -32,7 +32,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: curriculum_vitae_kapfhammer.pdf
-          env:
+        env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # # Create a release of the PDF of the CV
