@@ -1,11 +1,12 @@
 # Basic workflow that:
 # --> lints the markdown in the README file
 # --> checks to ensure that files and directories exist
+# --> builds the PDF of the CV using latexmk compiler
 name: build
 
 # Controls when the action will run.
 # Triggers the workflow on push or pull request
-# events but only for the master branch
+# events but only for the master branch.
 on:
   push:
     branches: [ master ]
