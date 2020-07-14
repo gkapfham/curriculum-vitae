@@ -1,4 +1,4 @@
-![build](https://github.com/gkapfham/curriculum-vitae/workflows/build/badge.svg)
+![build](https://github.com/gkapfham/curriculum-vitae/workflows/build/badge.svg) ![release](https://github.com/gkapfham/curriculum-vitae/workflows/release/badge.svg)
 
 # curriculum-vitae
 
