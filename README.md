@@ -72,3 +72,28 @@ latexmk -pdf -pvc curriculum_vitae_kapfhammer.tex
 ```
 
 ## Releasing a New Version of the Curriculum Vitae
+
+See what tag you are current on for the repository:
+
+```shell
+git describe --tags
+```
+
+Set a new tag for the release of the document:
+
+```shell
+git tag v1.0.0
+```
+
+Note that I follow the [Semantic Versioning Standard](https://semver.org/) when
+defining the tags for the release of the curriculum vitae.
+
+Push all of the changes and the new tag to GitHub:
+
+```shell
+git push -u origin master --tags
+```
+
+New releases of the curriculum vitae are now available through the
+[releases](https://github.com/gkapfham/curriculum-vitae/releases) section of the
+repository.
