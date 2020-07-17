@@ -21,12 +21,18 @@
 \usepackage{xcolor}
 \usepackage{lastpage}
 
+% Define the margins
+%
 \usepackage[scale=0.9, top=.5in, bottom=.5in, footskip=.1in]{geometry}
 
+% Define the sections used in the CV
+%
 \newcommand{\subsubsection}{}
 \newcommand{\paragraph}{}
 \newcommand{\subparagraph}{}
 
+% Define the header, including the release date
+%
 \fancyhf{}
 \lfoot{July 15, 2020}
 \rfoot{\thepage\ of~\pageref{LastPage}}
@@ -41,8 +47,8 @@
 \usepackage{pdfpages/pdfpages}
 \usepackage{moderntimeline/moderntimeline}
 
-% Increase this two beyond the current
-% year for better formatting
+% Increase this at least two beyond the current
+% year for better formatting of the left-side timeline
 \tlmaxdates{1994}{2024}
 
 \tltextstart[north]{\scriptsize}
@@ -84,6 +90,7 @@
 
 % Modifying the default standard.tex style of Biblatex
 % Performed to include the moderntimeline package
+%
 \input{biblatex_modifications/standard_modification.tex}
 
 \newcommand{\cvreferencecolumn}[2]{%
@@ -123,12 +130,16 @@
 \newcommand{\gofaculty}{$^{\mbox{\ding{81}}}$}
 \newcommand{\goacm}{$^{\mbox{\ding{169}}}$}
 
+% Add the header and contact details
+%
 \name{\textrm{Gregory}}{\\\mbox{\textrm{M.\ Kapfhammer}}}
 \title{\textrm{\huge{Associate Professor of Computer Science}}\vspace*{-.3in}}
 \address{Department of Computer Science\\Allegheny College\\}{}{}
 \phone[mobile]{+1 814-332-2880}
 \email{gkapfham@allegheny.edu}
 
+% Define the fonts for sections and subsections
+%
 \renewcommand*\sectionfont{\Huge\rmfamily}
 \renewcommand*\subsectionfont{\LARGE\rmfamily}
 
