@@ -96,4 +96,6 @@ git push -u origin master --tags
 
 New releases of the curriculum vitae are now available through the
 [releases](https://github.com/gkapfham/curriculum-vitae/releases) section of the
-repository.
+repository. Finally, please note that the automated release of the PDF of the
+curriculum vitae works through GitHub Actions and the workflow in the
+`.github/workflows/release.yml` file.
