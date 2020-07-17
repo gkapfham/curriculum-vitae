@@ -43,7 +43,7 @@
 
 % Increase this two beyond the current
 % year for better formatting
-\tlmaxdates{1994}{2022}
+\tlmaxdates{1994}{2024}
 
 \tltextstart[north]{\scriptsize}
 \tltextend[south]{\scriptsize}
@@ -423,18 +423,23 @@ the influence that technology has on society.}
 }
 
 % Removing forced punctuation from cvitem
+%
 \input{cvitem_modifications/cvitem_modified}
 
 % Print all publications
+%
 \nocite{*}
 
 % Tighten the spacing between the entries in all bibliographies
+%
 \setlength\bibitemsep{-.15in}
 
 % Reduce the font size of the bibliography entries
+%
 \renewcommand*{\bibfont}{\small}
 
 % RESEARCH PAPERS:
+%
 \defbibfilter{papers}{
   type=article or
   type=inproceedings or
@@ -449,9 +454,11 @@ the influence that technology has on society.}
 \DeclareFieldFormat[incollection]{title}{\mkbibquote{#1\addcomma}}
 
 \vspace*{-.1in}
+%
 \printbibliography[filter=papers,title={Publications}]
 
 % RESEARCH PRESENTATIONS:
+%
 \defbibfilter{presentations}{
   type=misc and
   not keyword=supervised
@@ -459,9 +466,11 @@ the influence that technology has on society.}
 \DeclareFieldFormat[misc]{title}{\mkbibquote{#1\addcomma}}
 
 \vspace*{-.4in}
+%
 \printbibliography[filter=presentations,title={Presentations}]
 
 % VOLUMES EDITED:
+%
 \defbibfilter{volumesedited}{
   type=article and
   keyword=edit
@@ -469,7 +478,10 @@ the influence that technology has on society.}
 \DeclareFieldFormat[misc]{title}{\mkbibquote{#1\addcomma}}
 
 \vspace*{-.4in}
+%
 \printbibliography[filter=volumesedited,title={Volumes Edited}]
+
+% NOTE: No longer including supervised research and presentations
 
 % SUPERVISED THESES
 
@@ -509,170 +521,271 @@ the influence that technology has on society.}
 % \printbibliography[filter=supervise,title={Supervised Presentations}]
 
 \vspace*{-.4in}
+%
 \section{Professional Service}
 
 \subsection{Conferences and Workshops}
 
-\tldatecventry{2020}{International Conference on Automated Software Engineering}{}{}{}{Program Committee Member (One time)}
+\tldatecventry{2020}{International Conference on Automated Software
+Engineering}{}{}{}{Program Committee Member (One time)}
 
-\tldatecventry{2020}{International Conference on the Automation of Software Test}{}{}{}{Program Committee Member (One time)}
+\tldatecventry{2020}{International Conference on the Automation of Software
+Test}{}{}{}{Program Committee Member (One time)}
 
-\tldatecventry{2020}{International Genetic and Evolutionary Computation Conference}{}{}{}{Program Committee Member (One time)}
+\tldatecventry{2020}{International Genetic and Evolutionary Computation
+Conference}{}{}{}{Program Committee Member (One time)}
 
-\tlcventry{2019}{2020}{International Conference on the Quality of Information and Communications Technology}{}{}{}{Program Committee Member (Two times)}
+\tlcventry{2019}{2020}{International Conference on the Quality of Information
+and Communications Technology}{}{}{}{Program Committee Member (Two times)}
 
 \tldatecventry{2018}{International Workshop on Debugging and Repair}{}{}{}{Program Committee Member (One time)}
 
-\tldatecventry{2015}{International Conference on Software Engineering and Knowledge Engineering}{}{}{}
-{\begin{itemize}
+\tldatecventry{2015}{International Conference on Software Engineering and
+  Knowledge Engineering}{}{}{}{
+  %
+  \begin{itemize}
+    %
     \renewcommand\labelitemi{\Large\textbullet}
-    \item Session Chair (One time)
-    \item Panel Member (One time)
-\end{itemize}}
-
-\tlcventry{2013}{2014}{International Workshop on Testing the Cloud}{}{}{}{Program Committee Member (Two times)}
-
-\tlcventry{2012}{2017}{International Workshop on Program Debugging}{}{}{}{Program Committee Member (Five times)}
-
-\tldatecventry{2012}{International Asia-Pacific Software Engineering Conference}{}{}{}{Program Committee Member (One time)}
-
-\tlcventry{2011}{2020}{International Conference on Software Testing, Verification and Validation}{}{}{}
-{\begin{itemize}
-    \renewcommand\labelitemi{\Large\textbullet}
-    \item Program Committee Member (Four times)
-    \item Testing Tools Track Program Committee Member (One time)
-    \item PhD Symposium Panel Member (One time)
-\end{itemize}}
-
-\tlcventry{2011}{2014}{International Workshop on Regression Testing}{}{}{}
-{\begin{itemize}
-    \renewcommand\labelitemi{\Large\textbullet}
-    \item General Chair (One time)
-    \item Program Chair (One time)
-    \item Program Committee Member (Two times)
-\end{itemize}}
-
-\tldatecventry{2011}{International Conference on Software Engineering and Data Engineering}{}{}{}{Session Chair (One time)}
-
-\tldatecventry{2011}{International Workshop on Testing and Debugging}{}{}{}{Program Committee Member (One time)}
-
-\tlcventry{2010}{2019}{International Workshop on Mutation Analysis}{}{}{}{Program
-  Committee Member (Five times)}
-
-\tlcventry{2010}{2015}{International Conference on Tests and Proofs}{}{}{}{Program Committee Member (Six times)}
-
-\tlcventry{2010}{2019}{International Workshop on the Automation of Software Test}{}{}{}
-{\begin{itemize}
-    \renewcommand\labelitemi{\Large\textbullet}
-    \item Session Chair (One time)
-    \item Workshop Co-Chair (One time)
-    \item Program Committee Member (Seven times)
-  \end{itemize}}
-
-\tlcventry{2010}{2011}{Midstates Conference for Undergraduate Research in Computer Science and
-Mathematics}{}{}{}{Program Committee Member (Two times)}
-
-\tldatecventry{2010}{Late Breaking Abstracts Workshop at the Genetic and Evolutionary Computation
-Conference}{}{}{}{Session Chair (One time)}
-
-\tlcventry{2009}{2020}{International Symposium on Search-Based Software Engineering}{}{}{}
-{\begin{itemize}
-    \renewcommand\labelitemi{\Large\textbullet}
-    \item Publicity Chair (One time)
-    \item Doctoral Symposium Chair (One time)
-    \item Program Committee Member (Eight times)
-  \end{itemize}}
-
-\tlcventry{2008}{2020}{International Workshop on Search-Based Software Testing}{}{}{}{Program Committee Member (Ten times)}
-
-\tlcventry{2007}{2015}{Testing: Academic and Industrial Conference --- Practice and Research Techniques}{}{}{}
-{\begin{itemize}
-    \renewcommand\labelitemi{\Large\textbullet}
-    \item Program Co-Chair (Three times)
-    \item Program Committee Member (Four times)
-  \end{itemize}}
-
-\tlcventry{2006}{2007}{International Conference on the Principles and Practice of Programming in Java}{}{}{}{Program Committee Member (Two times)}
-
-\tlcventry{2005}{2016}{International Conference on Software Engineering}{}{}{}
-{\begin{itemize}
-    \renewcommand\labelitemi{\Large\textbullet}
-    \item Reviewer (Two times)
-    \item Poster Track Program Committee Member (One time)
-  \end{itemize}}
-
-\tldatecventry{2005}{International Conference on the Foundations of Software Engineering}{}{}{}{Reviewer (One time)}
-
-\tlcventry{2004}{2009}{International Symposium on Applied Computing}{}{}{}
-{\begin{itemize}
-  \renewcommand\labelitemi{\Large\textbullet}
+    %
   \item Session Chair (One time)
-  \item Reviewer (One time)
-\end{itemize}}
+    %
+  \item Panel Member (One time)
+    %
+  \end{itemize}
+  %
+}
 
-\tldatecventry{2003}{International Conference on Distributed Computing Systems}{}{}{}{Reviewer (One time)}
+\tlcventry{2013}{2014}{International Workshop on Testing the
+Cloud}{}{}{}{Program Committee Member (Two times)}
+
+\tlcventry{2012}{2017}{International Workshop on Program
+Debugging}{}{}{}{Program Committee Member (Five times)}
+
+\tldatecventry{2012}{International Asia-Pacific Software Engineering
+Conference}{}{}{}{Program Committee Member (One time)}
+
+\tlcventry{2011}{2021}{International Conference on Software Testing,
+  Verification and Validation}{}{}{}{
+  %
+  \begin{itemize}
+    %
+    \renewcommand\labelitemi{\Large\textbullet}
+    %
+  \item Program Committee Member (Five times)
+    %
+  \item Testing Tools Track Program Committee Member (One time)
+    %
+  \item PhD Symposium Panel Member (One time)
+    %
+  \end{itemize}
+  %
+}
+
+\tlcventry{2011}{2014}{International Workshop on Regression Testing}{}{}{}{
+  %
+  \begin{itemize}
+    %
+    \renewcommand\labelitemi{\Large\textbullet}
+    %
+  \item General Chair (One time)
+    %
+  \item Program Chair (One time)
+    %
+  \item Program Committee Member (Two times)
+    %
+\end{itemize}
+%
+}
+
+\tldatecventry{2011}{International Conference on Software Engineering and Data
+Engineering}{}{}{}{Session Chair (One time)}
+
+\tldatecventry{2011}{International Workshop on Testing and
+Debugging}{}{}{}{Program Committee Member (One time)}
+
+\tlcventry{2010}{2019}{International Workshop on Mutation
+Analysis}{}{}{}{Program Committee Member (Five times)}
+
+\tlcventry{2010}{2015}{International Conference on Tests and
+Proofs}{}{}{}{Program Committee Member (Six times)}
+
+\tlcventry{2010}{2019}{International Workshop on the Automation of Software
+  Test}{}{}{}{
+  %
+  \begin{itemize}
+    %
+    \renewcommand\labelitemi{\Large\textbullet}
+    %
+  \item Session Chair (One time)
+    %
+  \item Workshop Co-Chair (One time)
+    %
+  \item Program Committee Member (Seven times)
+    %
+  \end{itemize}
+  %
+}
+
+\tlcventry{2010}{2011}{Midstates Conference for Undergraduate Research in
+Computer Science and Mathematics}{}{}{}{Program Committee Member (Two times)}
+
+\tldatecventry{2010}{Late Breaking Abstracts Workshop at the Genetic and
+Evolutionary Computation Conference}{}{}{}{Session Chair (One time)}
+
+\tlcventry{2009}{2020}{International Symposium on Search-Based Software
+  Engineering}{}{}{}{
+  %
+  \begin{itemize}
+    %
+    \renewcommand\labelitemi{\Large\textbullet}
+    %
+  \item Publicity Chair (One time)
+    %
+  \item Doctoral Symposium Chair (One time)
+    %
+  \item Program Committee Member (Eight times)
+    %
+  \end{itemize}
+  %
+}
+
+\tlcventry{2008}{2020}{International Workshop on Search-Based Software
+Testing}{}{}{}{Program Committee Member (Ten times)}
+
+\tlcventry{2007}{2015}{Testing: Academic and Industrial Conference --- Practice
+  and Research Techniques}{}{}{}{
+  %
+  \begin{itemize}
+    %
+    \renewcommand\labelitemi{\Large\textbullet}
+    %
+  \item Program Co-Chair (Three times)
+    %
+  \item Program Committee Member (Four times)
+    %
+  \end{itemize}
+  %
+}
+
+\tlcventry{2006}{2007}{International Conference on the Principles and Practice
+of Programming in Java}{}{}{}{Program Committee Member (Two times)}
+
+\tlcventry{2005}{2016}{International Conference on Software Engineering}{}{}{}{
+  %
+  \begin{itemize}
+    %
+    \renewcommand\labelitemi{\Large\textbullet}
+    %
+  \item Reviewer (Two times)
+    %
+  \item Poster Track Program Committee Member (One time)
+    %
+  \end{itemize}
+  %
+}
+
+\tldatecventry{2005}{International Conference on the Foundations of Software
+Engineering}{}{}{}{Reviewer (One time)}
+
+\tlcventry{2004}{2009}{International Symposium on Applied Computing}{}{}{}{
+  %
+  \begin{itemize}
+    %
+    \renewcommand\labelitemi{\Large\textbullet}
+    %
+  \item Session Chair (One time)
+    %
+  \item Reviewer (One time)
+    %
+  \end{itemize}
+  %
+}
+
+\tldatecventry{2003}{International Conference on Distributed Computing
+Systems}{}{}{}{Reviewer (One time)}
 
 \subsection{Transactions and Journals}
 
-\tlcventry{2019}{0}{Journal of Software: Evolution and Process}{}{}{}{Associate Editor}
+\tlcventry{2019}{0}{Journal of Software: Evolution and Process}{}{}{}{Associate
+Editor}
 
 \tlcventry{2019}{0}{PeerJ Computer Science}{}{}{}{Academic Editor}
 
-\tldatecventry{2020}{Genetic Programming and Evolvable Machines Journal}{}{}{}{Reviewer (One time)}
+\tldatecventry{2020}{Genetic Programming and Evolvable Machines
+Journal}{}{}{}{Reviewer (One time)}
 
-\tldatecventry{2018}{Formal Aspects of Computing Journal}{}{}{}{Reviewer (One time)}
+\tldatecventry{2018}{Formal Aspects of Computing Journal}{}{}{}{Reviewer (One
+time)}
 
 \tlcventry{2018}{2019}{IET Software Journal}{}{}{}{Reviewer (Four times)}
 
-\tlcventry{2017}{2018}{Transactions on Services Computing}{}{}{}{Reviewer (Two times)}
+\tlcventry{2017}{2018}{Transactions on Services Computing}{}{}{}{Reviewer (Two
+times)}
 
-\tldatecventry{2017}{Transactions on Industrial Informatics}{}{}{}{Reviewer (One time)}
+\tldatecventry{2017}{Transactions on Industrial Informatics}{}{}{}{Reviewer (One
+time)}
 
-\tldatecventry{2016}{Software and Systems Modelling Journal}{}{}{}{Reviewer (One time)}
+\tldatecventry{2016}{Software and Systems Modelling Journal}{}{}{}{Reviewer (One
+time)}
 
 \tldatecventry{2015}{IEEE Software Journal}{}{}{}{Reviewer (One time)}
 
-\tlcventry{2012}{2020}{Empirical Software Engineering Journal}{}{}{}{Reviewer (Four times)}
+\tlcventry{2012}{2020}{Empirical Software Engineering Journal}{}{}{}{Reviewer
+(Four times)}
 
-\tlcventry{2011}{2019}{Journal of Software: Evolution and Process}{}{}{}{Reviewer (Three times)}
+\tlcventry{2011}{2019}{Journal of Software: Evolution and
+Process}{}{}{}{Reviewer (Three times)}
 
-\tldatecventry{2010}{Advances in Software Engineering Journal}{}{}{}{Reviewer (One time)}
+\tldatecventry{2010}{Advances in Software Engineering Journal}{}{}{}{Reviewer
+(One time)}
 
-\tldatecventry{2010}{Journal of Software Engineering and Knowledge Engineering}{}{}{}{Reviewer (One time)}
+\tldatecventry{2010}{Journal of Software Engineering and Knowledge
+Engineering}{}{}{}{Reviewer (One time)}
 
-\tlcventry{2009}{2018}{Journal of Software Testing, Verification and Reliability}{}{}{}{Reviewer (Eleven times)}
+\tlcventry{2009}{2018}{Journal of Software Testing, Verification and
+Reliability}{}{}{}{Reviewer (Eleven times)}
 
-\tlcventry{2009}{2020}{Journal of Systems and Software}{}{}{}{Reviewer (Fourteen times)}
+\tlcventry{2009}{2020}{Journal of Systems and Software}{}{}{}{Reviewer (Fourteen
+times)}
 
 \tlcventry{2009}{2019}{Software Quality Journal}{}{}{}{Reviewer (Fifteen times)}
 
-\tlcventry{2009}{2020}{Information and Software Technology Journal}{}{}{}{Reviewer (Eleven times)}
+\tlcventry{2009}{2020}{Information and Software Technology
+Journal}{}{}{}{Reviewer (Eleven times)}
 
-\tlcventry{2008}{2010}{Automated Software Engineering Journal}{}{}{}{Reviewer (Two times)}
+\tlcventry{2008}{2010}{Automated Software Engineering Journal}{}{}{}{Reviewer
+(Two times)}
 
 \tldatecventry{2008}{Communications of the ACM}{}{}{}{Reviewer (One time)}
 
-\tlcventry{2007}{2017}{Science of Computer Programming Journal}{}{}{}{Reviewer (Three times)}
+\tlcventry{2007}{2017}{Science of Computer Programming Journal}{}{}{}{Reviewer
+(Three times)}
 
 \tldatecventry{2007}{Transactions on Computers}{}{}{}{Reviewer (One time)}
 
-\tlcventry{2006}{2020}{Transactions on Software Engineering}{}{}{}{Reviewer (Thirty-three times)}
+\tlcventry{2006}{2020}{Transactions on Software Engineering}{}{}{}{Reviewer
+(Thirty-three times)}
 
-\tlcventry{2004}{2015}{Transactions on Software Engineering and Methodology}{}{}{}{Reviewer (Six times)}
+\tlcventry{2004}{2015}{Transactions on Software Engineering and
+Methodology}{}{}{}{Reviewer (Six times)}
 
 \tldatecventry{2002}{IEE Proceedings --- Software}{}{}{}{Reviewer (One time)}
 
 \subsection{Other Services}
 
-\tldatecventry{2016}{Natural Sciences and Engineering Research Council of Canada}{}{}{}{Discovery Grants Reviewer (One time)}
+\tldatecventry{2016}{Natural Sciences and Engineering Research Council of
+Canada}{}{}{}{Discovery Grants Reviewer (One time)}
 
 \tldatecventry{2012}{Addison-Wesley Book Proposal}{}{}{}{Reviewer (One time)}
 
-\tldatecventry{2010}{Taylor and Francis Encyclopedia of Software Engineering}{}{}{}{Reviewer (One time)}
+\tldatecventry{2010}{Taylor and Francis Encyclopedia of Software
+Engineering}{}{}{}{Reviewer (One time)}
 
-\tldatecventry{2010}{National Science Foundation of the United States of America}{}{}{}{Review Panel Member (One time)}
+\tldatecventry{2010}{National Science Foundation of the United States of
+America}{}{}{}{Review Panel Member (One time)}
 
-\tldatecventry{2008}{Handbook of Technology Management}{}{}{}{Reviewer (One time)}
+\tldatecventry{2008}{Handbook of Technology Management}{}{}{}{Reviewer (One
+time)}
 
 \tldatecventry{2006}{Handbook of Computer Networks}{}{}{}{Reviewer (One time)}
 
@@ -685,9 +798,9 @@ Conference}{}{}{}{Session Chair (One time)}
 Division}{}{}{}{Served on the committee reviewing the College's
 first-year/sophomore writing and speaking program.}
 
-\tlcventry{2014}{2019}{Director of the Cupper Scholars Program}{}{}{}{Articulated
-and implemented a vision for a scholarship recognizing the late Robert D.\
-Cupper.}
+\tlcventry{2014}{2019}{Director of the Cupper Scholars
+Program}{}{}{}{Articulated and implemented a vision for a scholarship
+recognizing the service of Robert D.\ Cupper.}
 
 \tlcventry{2013}{2018}{Chair of the Department of Computer Science's Faculty
 Search Committee}{}{}{}{Coordinated all of the activities for searches that
@@ -726,16 +839,17 @@ materials, interviewed final candidates.}
 % \vspace*{-.175in}
 % \section{Outreach Activities}
 
-% \tldatecventry{2011}{Cochranton Elementary School}{}{}{}{Developed, employed, and evaluated computer-based
-% instructional methods for teaching geometry.}
+% \tldatecventry{2011}{Cochranton Elementary School}{}{}{}{Developed, employed,
+% and evaluated computer-based instructional methods for teaching geometry.}
 
-% \tldatecventry{2009}{Merrimack College}{}{}{}{Delivered lectures and hosted events introducing the theory and practice
-% of software engineering.}
+% \tldatecventry{2009}{Merrimack College}{}{}{}{Delivered lectures and hosted
+% events introducing the theory and practice of software engineering.}
 
-% \tldatecventry{2004}{Allegheny College}{}{}{}{Introduced the fundamentals of computer science to attendees of an
-%   off-campus faculty conference.}
+% \tldatecventry{2004}{Allegheny College}{}{}{}{Introduced the fundamentals of
+% computer science to attendees of an off-campus faculty conference.}
 
 \vspace*{-.175in}
+%
 \section{Professional Distinctions}
 
 \tldatecventry{2019}{Best Paper at the 12th International International
@@ -744,9 +858,11 @@ visual verification of layout failures in responsively designed web pages,''
 co-authored with Ibrahim Althomali and Phil McMinn. \vspace*{.1in}}
 
 \tldatecventry{2016}{Best Presentation at the 12th International Workshop on
-Search-Based Software Testing}{}{}{}{``Hitchhikers need free vehicles! Shared
+Search-Based Software Testing}{}{}{}{``Hitchhikers need free vehicles!~Shared
 repositories for statistical analysis in {SBST},'' co-authored with Phil McMinn.
 \vspace*{.1in}}
+
+% NOTE: Commented out two of the items due to current space constraints
 
 \tldatecventry{2011}{Recipient of Allegheny College's Thoburn Award for Excellence in Teaching}{}{}{}
 {Award citations include the following observations: \vspace*{.025in}
@@ -767,13 +883,15 @@ operators during search-based test suite prioritization,'' co-authored with
 Alexander P. Conrad and Robert S.\ Roos. \vspace*{.1in}}
 
 \tlcventry{2007}{2011}{Research Adviser for Recipients of the Harold M. State Research Fellowship}{}{}{}
-{Prestigious award given to third-year Allegheny College student(s) majoring in a natural science. \vspace*{.025in}
+{Prestigious award given to third-year Allegheny College student(s) majoring in a natural science.\vspace*{.025in}
   \begin{itemize}
     \renewcommand\labelitemi{\Large\textbullet}
-    \item Jonathan Miller Kauffman, 2011, Topic: Regression testing
-    \item Alexander P. Conrad, 2008, Topic: Search-based testing
-    \item Joshua J. Geiger, 2007, Topic: Database testing
-  \end{itemize}\vspace*{.05in}}
+  \item Jonathan Miller Kauffman, 2011, Topic: Regression testing
+  \item Alexander P. Conrad, 2008, Topic: Search-based testing
+  \item Joshua J. Geiger, 2007, Topic: Database testing
+\end{itemize}
+\vspace*{.05in}
+}
 
 \tldatecventry{2003}{Best Paper at the 11th International Symposium on the
 Foundations of Software Engineering}{}{}{}{``A family of test adequacy criteria
@@ -783,29 +901,40 @@ for database-driven applications,'' \\ co-authored with Mary Lou Soffa.
 \tlcventry{2002}{2005}{Academic and Research Adviser for Kristen R. Walcott}{}{}{}
 {\begin{itemize}
     \renewcommand\labelitemi{\Large\textbullet}
-    \item Finalist and recipient of the Google Anita Borg Scholarship
-    \item Honorable mention for the Ford Foundation Diversity Fellowship
-    \item Recipient of the National Science Foundation Graduate Research Fellowship
-  \end{itemize}\vspace*{.05in}}
+  \item Finalist and recipient of the Google Anita Borg Scholarship
+  \item Honorable mention for the Ford Foundation Diversity Fellowship
+  \item Recipient of the National Science Foundation Graduate Research Fellowship
+\end{itemize}
+\vspace*{.05in}
+}
 
-\tldatecventry{1999}{Allegheny College ACM Student Chapter Prize for the Best Senior Thesis}{}{}{}{}
+\tldatecventry{1999}{Allegheny College ACM Student Chapter Prize for the Best
+Senior Thesis}{}{}{}{}
 
-\tldatecventry{1999}{Allegheny College Department of Computer Science Faculty Prize for Being the Best Senior}{}{}{}{}
+\tldatecventry{1999}{Allegheny College Department of Computer Science Faculty
+Prize for Being the Best Senior}{}{}{}{}
 
 \vspace*{-.2in}
+%
 \section{Additional Resources}
+%
 \vspace*{-.01in}
 
 \tlcventry{2014}{0}{LinkedIn}{\em{https://www.linkedin.com/in/GregKapfhammer/}}{}{}{}
+%
 \vspace*{-.01in}
 
 \tlcventry{2012}{0}{GitHub}{\em{https://github.com/gkapfham/}}{}{}{}
+%
 \vspace*{-.01in}
 
-\tlcventry{2012}{0}{Google Scholar}{\em{https://scholar.google.com/citations?user=g0eDPjYAAAAJ}}{}{}{}
+\tlcventry{2012}{0}{Google
+Scholar}{\em{https://scholar.google.com/citations?user=g0eDPjYAAAAJ}}{}{}{}
+%
 \vspace*{-.01in}
 
 \tlcventry{2011}{0}{Twitter}{\em{https://twitter.com/GregKapfhammer/}}{}{}{}
+%
 \vspace*{-.01in}
 
 \tlcventry{2000}{0}{Web Site}{\em{https://www.gregorykapfhammer.com/}}{}{}{}
@@ -814,4 +943,3 @@ for database-driven applications,'' \\ co-authored with Mary Lou Soffa.
 \input{cvitem_modifications/cvitem_moderncvclassic}
 
 \end{document}
-
