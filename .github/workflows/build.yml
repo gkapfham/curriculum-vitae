@@ -1,5 +1,5 @@
 # Basic workflow that:
-# --> lints the markdown in the README file
+# --> lints the markdown in the README file and all other Markdown files
 # --> builds the PDF of the CV using latexmk compiler
 name: build
 
