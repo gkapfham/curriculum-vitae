@@ -53,7 +53,7 @@
     \bool_set_false:N \l__xpatch_protect_bool
    \tl_set:Nx \l__xpatch_name_tl { \cs_to_str:N #2  }
    \tl_set:Nx \l__xpatch_repl_tl
-     { \c__xpatch_bizarre_tl \token_get_replacement_spec:N #2 }
+     { \c__xpatch_bizarre_tl \cs_replacement_spec:N #2 }
    \tl_if_in:NxT \l__xpatch_repl_tl
      {
       \c__xpatch_bizarre_tl
