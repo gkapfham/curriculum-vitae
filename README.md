@@ -18,11 +18,14 @@ creating your document.
 
 ## Development Environment
 
-The curriculum vitae is compiled on an Ubuntu 16.04 LTS workstation using
-`pdflatex` and `biber`. You may also compile the CV to a PDF file using a wide
-variety of other tools, such as `latexmk`. If you are unable to compile the CV
-with your development tools and your execution environment, then please open a
-new issue and I will attempt to resolve your concerns.
+The curriculum vitae was originally compiled on an Ubuntu 16.04 LTS workstation
+using `pdflatex` and `biber` from an old version of TeXLive. The curriculum
+vitae is now compiled on an Arch Linux workstation using `latexmk` from the
+TeXLive 2021 distribution. You should be able to compile the CV to a PDF file
+using a wide variety of tools and operating systems and versions of TeXLive. If
+you are unable to compile the CV with your development tools and your execution
+environment, then please open a new issue and I will attempt to resolve your
+concerns.
 
 ## Creating the Curriculum Vitae
 
@@ -32,7 +35,8 @@ For, clone the repository to your local computer:
 git clone https://github.com/gkapfham/curriculum-vitae.git
 ```
 
-Now, change into the directory that contains the repository's files:
+Now, change into the directory that contains the repository's files and follow
+all of the following steps the first time that you compile the CV:
 
 ```shell
 cd curriculum-vitae
@@ -46,8 +50,8 @@ pdflatex curriculum_vitae_kapfhammer.tex
 pdflatex curriculum_vitae_kapfhammer.tex
 ```
 
-Before you compile the CV, make sure that you have the bibliography in a Git
-submodule:
+Remember, before you compile the CV, make sure that you have the bibliography in
+a Git submodule:
 
 ```shell
 cd bibliography
@@ -56,7 +60,7 @@ git submodule update
 cd ../
 ```
 
-At this point, you can compile the CV using the following commands:
+As a reminder, you can compile the CV using the following commands:
 
 ```shell
 pdflatex curriculum-vitae-kapfhammer.tex
@@ -65,7 +69,8 @@ pdflatex curriculum_vitae_kapfhammer.tex
 pdflatex curriculum_vitae_kapfhammer.tex
 ```
 
-Alternatively, you can compile the CV using a single command:
+Alternatively, once you have access to the `bibliography` submodule you can
+compile the CV using a single command:
 
 ```shell
 latexmk -pdf -pvc curriculum_vitae_kapfhammer.tex
