@@ -32,7 +32,7 @@ jobs:
       # the .mdlrc file stored in the repo's root
       # for further configuration details
       - name: Run mdl
-        uses: actionshub/markdownlint@master
+        uses: actionshub/markdownlint@main
       # Build the LaTeX document of the CV
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
