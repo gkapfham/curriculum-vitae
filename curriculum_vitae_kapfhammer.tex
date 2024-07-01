@@ -19,7 +19,7 @@
 % \usepackage{lastpage}
 \usepackage{microtype}
 \usepackage{xcolor}
-% \usepackage{lastpage}
+\usepackage{lastpage}
 
 % Define the margins
 %
@@ -31,10 +31,17 @@
 \newcommand{\paragraph}{}
 \newcommand{\subparagraph}{}
 
+% Disable the page numbers as they are now displayed
+% in the left footer (where font size is controlled
+% and smaller in size)
+\nopagenumbers{}
+
 % Define the footer, including the release date
+% and the page number details using the \pageref and \lastpage
 %
 \fancyhf{}
-\lfoot{\small{June 30, 2024}}
+\lfoot{\scriptsize{June 30, 2024 --- Page \thepage~of \pageref{lastpage}}}
+
 
 \usepackage{etoolbox}
 \patchcmd{\recomputecvlengths}{%
@@ -409,7 +416,7 @@ II}$^{\;\gostar\;\;\gobox}$}{}{}{Mentored undergraduates as they conceive of,
 propose, conduct, document, and defend research.}
 
 \tldatecventry{2009}{First-Year/Sophomore Seminar 101}{\em{Computational
-Modelling}$^{\;\godagger}$}{}{}{Explored how computers influence
+Modeling}$^{\;\godagger}$}{}{}{Explored how computers influence
 decision making in areas like business, medicine, and the arts.}
 
 \tlcventry{2008}{2013}{First-Year/Sophomore Seminar 101}{\em{Software
@@ -419,10 +426,6 @@ the influence that technology has on society.}
 \tldatecventry{2024}{First-Year/Sophomore Seminar 102}{\em{Exposition
 Engineering}$^{\;\godagger}$}{}{}{Investigated how software tools enhance
 oral and written communication.}
-
-% \tlcventry{2024}{2024}{First-Year/Sophomore Seminar 102}{\em{Exposition
-% Engineering}$^{\;\godagger}$}{}{}{Investigated how software tools enhance
-% oral and written communication.}
 
 % Explain the legend
 
@@ -950,6 +953,12 @@ In addition to undergraduate thesis advising as part of CMPSC 600/610, I co-supe
 \vspace{-0.5em}
 %
 \section{Media Appearances}
+
+\tldatecventry{2024}{Software Engineering Radio Podcast}{}{}{}{Host for Episode
+622: "Wolf Vollprecht on Python Tooling in Rust"}
+
+\tldatecventry{2024}{Software Engineering Radio Podcast}{}{}{}{Host for Episode
+609: "Hyrum Wright on Software Engineering at Google"}
 
 \tldatecventry{2023}{Hanselminutes Technology Podcast}{}{}{}{Guest for Episode
 873: "Dr.\ Gregory Kapfhammer Wants to Stop Flaky Tests"}
