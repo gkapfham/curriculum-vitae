@@ -16,10 +16,10 @@
 \usepackage[american]{babel}
 \usepackage[geometry]{ifsym}
 \usepackage{csquotes}
-\usepackage{lastpage}
+% \usepackage{lastpage}
 \usepackage{microtype}
 \usepackage{xcolor}
-\usepackage{lastpage}
+% \usepackage{lastpage}
 
 % Define the margins
 %
@@ -31,11 +31,10 @@
 \newcommand{\paragraph}{}
 \newcommand{\subparagraph}{}
 
-% Define the header, including the release date
+% Define the footer, including the release date
 %
 \fancyhf{}
-\lfoot{June 30, 2024}
-\rfoot{\thepage\ of~\pageref{LastPage}}
+\lfoot{\small{June 30, 2024}}
 
 \usepackage{etoolbox}
 \patchcmd{\recomputecvlengths}{%
@@ -191,6 +190,12 @@ Professor (2009-Present), Assistant Professor (2007-2009), Instructor
       and Information Science}
       %
       \begin{itemize} \renewcommand\labelitemi{\Large\textbullet}
+        %
+        \item Collaboratively designed, implemented, and deployed a
+          platform for automated student assessment.
+        %
+        \item Developed a new module on research methods in software
+          engineering for Computer Science 580.
         %
         \item Collaboratively created the Department of Computer and Information
           Science with new and/or revised majors and minors in Computer Science,
