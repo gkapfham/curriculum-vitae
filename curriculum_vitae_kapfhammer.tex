@@ -10,6 +10,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[rm]{roboto}
 \usepackage{pifont}
+\usepackage{fontawesome5}
 
 % Additional packages
 %
@@ -129,6 +130,8 @@
 \newcommand{\gostar}{{\mbox{\ding{72}}}}
 \newcommand{\gobox}{{\mbox{\ding{112}}}}
 \newcommand{\goplatform}{{\mbox{\ding{107}}}}
+\newcommand{\golink}{\faLink}
+\newcommand{\goreminder}{\faBell}
 
 \newcommand{\gospace}{$\;$}
 \newcommand{\gosecond}{$^{\mbox{\ding{63}}}$}
@@ -456,8 +459,12 @@ influence and enhance oral and written communication.}
 {\small
   \setlength\tabcolsep{6pt}
   \begin{tabular}{c}
-    All course titles and numbers are those used in the current academic
-    bulletin at Allegheny College.
+  \goreminder{}~All course titles and numbers are those used in the current academic
+    bulletin at Allegheny College. \\[0.1in]
+
+  \golink{}~More details about my teaching are available at:
+  https://www.gregorykapfhammer.com/teaching/.
+
 \end{tabular} }
 
 \vspace*{-.1in}
@@ -509,8 +516,12 @@ influence and enhance oral and written communication.}
   provided by grants from the Engineering and Physical Sciences Research
   Council, the Office of the Provost at Allegheny College, the Mozilla
   Foundation, and Facebook Research.
-  %
 }
+
+  \vspace*{.1in}
+  %
+  {\small \golink{}~More details about my research are available at:
+  https://www.gregorykapfhammer.com/research/}.
 
 % Remove forced punctuation from cvitem
 %
@@ -547,6 +558,13 @@ influence and enhance oral and written communication.}
 %
 \printbibliography[filter=papers,title={Research Publications}]
 
+\vspace*{-0.25in}
+%
+{\small \golink{}~More details about my research papers are available at:
+https://www.gregorykapfhammer.com/research/papers/}.
+%
+\vspace*{0.25in}
+
 % RESEARCH PRESENTATIONS:
 %
 \defbibfilter{presentations}{
@@ -558,6 +576,13 @@ influence and enhance oral and written communication.}
 \vspace*{-.4in}
 %
 \printbibliography[filter=presentations,title={Research Presentations}]
+
+\vspace*{-0.2in}
+%
+{\small \golink{}~More details about my research presentations are available at:
+https://www.gregorykapfhammer.com/research/presentations/}.
+%
+\vspace*{0.15in}
 
 % VOLUMES EDITED:
 %
@@ -631,6 +656,12 @@ functions}{}{}{}{https://github.com/Tada-Project/tada}
 
 \tlcventry{2019}{2021}{Viser: Automated classification of responsive layout
 failures in web pages}{}{}{}{https://github.com/redecheck/viser}
+
+%
+{\small \golink{}~More details about my software are available at:
+https://www.gregorykapfhammer.com/software/}.
+%
+\vspace*{.1in}
 
 % REPLICATION PACKAGES
 %
@@ -949,7 +980,12 @@ America}{}{}{}{Review Panel Member (Two times)}
 
 \tlcventry{2005}{2006}{Prentice Hall Books}{}{}{}{Reviewer (Two times)}
 
-\vspace*{-.2in}
+\vspace*{0.05in}
+%
+{\small \golink{}~More details about my professional service are available at:
+https://www.gregorykapfhammer.com/service/}.
+
+\vspace*{-.1in}
 %
 \section{Research Supervision}
 
@@ -1197,34 +1233,39 @@ Senior Thesis}{}{}{}{}
 \tldatecventry{1999}{Allegheny College Department of Computer Science Faculty
 Prize for Being the Best Senior}{}{}{}{}
 
-\vspace*{-.2in}
+\vspace*{0.15in}
 %
-\section{Additional Resources}
-%
-\vspace*{-.01in}
+{\small \golink{}~Additional professional details are available at:
+https://www.gregorykapfhammer.com/}.
 
-\tlcventry{2014}{0}{LinkedIn}{\em{https://www.linkedin.com/in/GregKapfhammer/}}{}{}{}
-%
-\vspace*{-.01in}
-
-\tlcventry{2022}{0}{Mastodon}{\em{https://fosstodon.org/@gkapfham}}{}{}{}
-%
-\vspace*{-.01in}
-
-\tlcventry{2012}{0}{GitHub}{\em{https://github.com/gkapfham/}}{}{}{}
-%
-\vspace*{-.01in}
-
-\tlcventry{2012}{0}{Google
-Scholar}{\em{https://scholar.google.com/citations?user=g0eDPjYAAAAJ}}{}{}{}
-%
-\vspace*{-.01in}
-
-% \tlcventry{2011}{0}{Twitter}{\em{https://twitter.com/GregKapfhammer/}}{}{}{}
+% \vspace*{-.2in}
+% %
+% \section{Additional Resources}
 % %
 % \vspace*{-.01in}
-
-\tlcventry{2000}{0}{Web Site}{\em{https://www.gregorykapfhammer.com/}}{}{}{}
+%
+% \tlcventry{2014}{0}{LinkedIn}{\em{https://www.linkedin.com/in/GregKapfhammer/}}{}{}{}
+% %
+% \vspace*{-.01in}
+%
+% \tlcventry{2022}{0}{Mastodon}{\em{https://fosstodon.org/@gkapfham}}{}{}{}
+% %
+% \vspace*{-.01in}
+%
+% \tlcventry{2012}{0}{GitHub}{\em{https://github.com/gkapfham/}}{}{}{}
+% %
+% \vspace*{-.01in}
+%
+% \tlcventry{2012}{0}{Google
+% Scholar}{\em{https://scholar.google.com/citations?user=g0eDPjYAAAAJ}}{}{}{}
+% %
+% \vspace*{-.01in}
+%
+% % \tlcventry{2011}{0}{Twitter}{\em{https://twitter.com/GregKapfhammer/}}{}{}{}
+% % %
+% % \vspace*{-.01in}
+%
+% \tlcventry{2000}{0}{Web Site}{\em{https://www.gregorykapfhammer.com/}}{}{}{}
 
 % Reverting changes to cvitem
 \input{cvitem_modifications/cvitem_moderncvclassic}
